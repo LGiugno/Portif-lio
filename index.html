@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lucas Zimmermann — Portfólio</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="js/script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">LZ</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Sobre</a>
+      <a href="projects.html">Projetos</a>
+      <a href="experience.html">Experiência</a>
+      <a href="contact.html">Contato</a>
+      <a href="feedback.html" class="cta">Avaliar</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <h1>Lucas Zimmermann</h1>
+        <p class="lead">Estudante de Engenharia de Software, Front-end &amp; SQL. Gosto muito de criar projetos e aprender cada vez mais!</p>
+        <div class="hero-cta">
+          <a class="btn" href="projects.html">Ver Projetos</a>
+          <a class="btn ghost" href="about.html">Saiba mais</a>
+          <a class="btn download-cv" href="curriculo.pdf" download="Lucas_Zimmermann_CV.pdf">
+            📄 Baixar CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="hero.gif" alt="hero" onerror="this.src='hero_fallback.jpg'">
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase container">
+    <h2>Destaques</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="project-1.gif" alt="Projeto 1" onerror="this.src='project-1.png'">
+        <h3>Sistema de Controle de Consumo Alimentar</h3>
+        <p>App para cadastrar refeições, análise nutricional via API e upload de imagens.</p>
+      </article>
+      <article class="card">
+        <img src="project-2.gif" alt="Projeto 2" onerror="this.src='project-2.png'">
+        <h3>Jogo Termo — Java</h3>
+        <p>Terminal game aplicando POO, manipulação de arquivos e lógica.</p>
+      </article>
+      <article class="card">
+        <img src="project-3.gif" alt="Projeto 3" onerror="this.src='project-3.png'">
+        <h3>Modelagem UML — Sistema de Brindes</h3>
+        <p>Diagrama de casos de uso e especificação de requisitos.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="quote container">
+    <blockquote>“Proatividade, lógica e vontade de aprender, aplicadas para transformar ideias em software.”</blockquote>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-left">© <span id="year">2025</span> Lucas Zimmermann</div>
+    <div class="footer-right">📧 <a href="mailto:lucaszimmermanng@gmail.com">lucaszimmermanng@gmail.com</a> • 📍 Joinville, SC</div>
+  </div>
+</footer>
+
+</body>
+</html>
