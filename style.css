@@ -380,33 +380,24 @@ input, textarea, select {
   }
 }
 
-.page-feedback select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  font-size: 16px;
-  background-color: var(--input-bg, #2a2a2a);
-  color: var(--input-color, #fff);
-}
-
 .page-feedback select option {
   background-color: #ffffff !important;
   color: #000000 !important;
   padding: 10px;
 }
 
+.page-feedback select {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  background-color: var(--input-bg, #2a2a2a);
+  background: #100f12;
+  color: var(--input-color, #fff);
+}
+
 .page-feedback select:focus {
-  background-color: #fff !important;
-  color: #000 !important;
-}
-
-.page-feedback select:focus option {
-  color: #000000 !important;
-}
-
-.page-feedback select option:checked,
-.page-feedback select option:hover {
-  background-color: #f0f0f0 !important;
-  color: #000000 !important;
+  background-color: #100f12 !important;
+  color: rgb(255, 255, 255) !important;
 }
