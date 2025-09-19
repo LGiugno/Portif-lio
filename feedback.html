@@ -5,72 +5,56 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Avaliar Site — Lucas</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .page-feedback select option {
-      background-color: #ffffff !important;
-      color: #000000 !important;
-      padding: 10px;
-    }
-    
-    .page-feedback select {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      width: 100%;
-      font-size: 16px;
-      background-color: var(--input-bg, #2a2a2a);
-      color: var(--input-color, #fff);
-    }
-    
-    .page-feedback select:focus {
-      background-color: #fff !important;
-      color: #000 !important;
-    }
-  </style>
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">LZ</a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">Sobre</a>
-      <a href="projects.html">Projetos</a>
-      <a href="experience.html">Experiência</a>
-      <a href="contact.html">Contato</a>
-      <a href="feedback.html" class="cta">Avaliar</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-  </div>
-</header>
-<main class="container page-feedback">
-  <h1>Avalie este site</h1>
-  <div class="card" style="margin-top:18px;padding:18px">
-    <form id="feedback-form" action="https://formsubmit.co/lucaszimmermanng@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Nova Avaliação do Site - Lucas">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-      
-      <label>Seu nome <input type="text" name="nome" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Avaliação (1-5)
-        <select name="avaliacao" required>
-          <option value="">Selecione...</option>
-          <option value="5">5 — Excelente</option>
-          <option value="4">4 — Muito bom</option>
-          <option value="3">3 — Bom</option>
-          <option value="2">2 — Regular</option>
-          <option value="1">1 — Ruim</option>
-        </select>
-      </label>
-      <label>Comentários <textarea name="comentarios" rows="5" placeholder="Opcional"></textarea></label>
-      <div class="form-actions">
-        <button type="submit" class="btn">Enviar Avaliação</button>
-      </div>
-    </form>
-    <div id="feedback-result" class="muted" style="margin-top:12px"></div>
-  </div>
-</main>
-<footer class="site-footer">© Lucas</footer>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LZ</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
+        <a href="experience.html">Experiência</a>
+        <a href="contact.html">Contato</a>
+        <a href="feedback.html" class="cta">Avaliar</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  
+  <main class="container page-feedback">
+    <h1>Avalie este site</h1>
+    <div class="card">
+      <form id="feedback-form" action="https://formsubmit.co/lucaszimmermanng@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nova Avaliação do Site - Lucas">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <label>Seu nome <input type="text" name="nome" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Avaliação (1-5)
+          <select name="avaliacao" required>
+            <option value="">Selecione...</option>
+            <option value="5">5 — Excelente</option>
+            <option value="4">4 — Muito bom</option>
+            <option value="3">3 — Bom</option>
+            <option value="2">2 — Regular</option>
+            <option value="1">1 — Ruim</option>
+          </select>
+        </label>
+        <label>Comentários <textarea name="comentarios" rows="5" placeholder="Opcional"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar Avaliação</button>
+        </div>
+      </form>
+      <div id="feedback-result" class="muted"></div>
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">© Lucas Zimmermann</div>
+  </footer>
 </body>
 </html>
