@@ -49,4 +49,44 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('#year, #year2').forEach(el => { 
     if (el) el.textContent = y; 
   });
+
+  const feedbackSelect = document.querySelector('.page-feedback select');
+  
+  if (feedbackSelect) {
+    feedbackSelect.addEventListener('mousedown', function() {
+      const options = this.options;
+      for (let i = 0; i < options.length; i++) {
+        options[i].style.color = '#000000';
+        options[i].style.backgroundColor = '#ffffff';
+      }
+    });
+    
+    feedbackSelect.addEventListener('change', function() {
+      this.style.color = '#ffffff';
+      this.style.backgroundColor = '#2a2a2a';
+    });
+    
+    feedbackSelect.addEventListener('focus', function() {
+      this.style.color = '#000000';
+      this.style.backgroundColor = '#ffffff';
+      
+      const options = this.options;
+      for (let i = 0; i < options.length; i++) {
+        options[i].style.color = '#000000';
+        options[i].style.backgroundColor = '#ffffff';
+      }
+    });
+    
+    feedbackSelect.addEventListener('blur', function() {
+      this.style.color = '#ffffff';
+      this.style.backgroundColor = '#2a2a2a';
+    });
+    
+    setTimeout(() => {
+      const options = feedbackSelect.options;
+      for (let i = 0; i < options.length; i++) {
+        options[i].style.color = '#000000';
+      }
+    }, 100);
+  }
 });
