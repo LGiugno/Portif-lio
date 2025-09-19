@@ -380,12 +380,6 @@ input, textarea, select {
   }
 }
 
-.page-feedback select option {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  padding: 10px;
-}
-
 .page-feedback select {
   padding: 10px;
   border: 1px solid #ccc;
@@ -396,7 +390,23 @@ input, textarea, select {
   color: var(--input-color, #fff);
 }
 
+.page-feedback select option {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  padding: 10px;
+}
+
 .page-feedback select:focus {
   background-color: #fff !important;
   color: #000 !important;
+}
+
+.page-feedback select:focus option {
+  color: #000000 !important;
+}
+
+.page-feedback select option:checked,
+.page-feedback select option:hover {
+  background-color: #f0f0f0 !important;
+  color: #000000 !important;
 }
