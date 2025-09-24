@@ -63,15 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const feedbackResult = document.getElementById('feedback-result');
   
   if (feedbackForm && feedbackResult) {
-    feedbackForm.onsubmit = null;
-    
     feedbackForm.addEventListener('submit', function(e) {
       const nome = this.querySelector('[name="nome"]').value;
       const email = this.querySelector('[name="email"]').value;
       const avaliacao = this.querySelector('[name="avaliacao"]').value;
       
       if (!nome || !email || !avaliacao) {
-        e.preventDefault();
+        e.preventDefault(); 
         feedbackResult.textContent = 'Por favor, preencha todos os campos obrigatórios.';
         feedbackResult.style.color = '#ff6b6b';
         return;
@@ -80,13 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
       feedbackResult.textContent = 'Enviando avaliação...';
       feedbackResult.style.color = '#4ecdc4';
       
+      
     });
-    
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-      feedbackResult.textContent = '✅ Avaliação enviada com sucesso! Obrigado.';
-      feedbackResult.style.color = '#4CAF50';
-    }
   }
 
   const feedbackSelect = document.querySelector('.page-feedback select');
@@ -127,5 +120,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  console.log('Site carregado com sucesso! Menu mobile ativo.');
+  console.log('Site carregado com sucesso! Menu mobile ativo e FormSubmit funcional.');
 });
