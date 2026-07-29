@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projetos & Automações — Lucas Zimmermann</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LZ<span class="logo-dot">.</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html" class="active">Projetos</a>
+        <a href="experience.html">Experiência</a>
+        <a href="contact.html">Contato</a>
+        <a href="feedback.html" class="cta">Avaliar</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle"><span></span><span></span><span></span></button>
+      <div class="nav-overlay" id="nav-overlay"></div>
+    </div>
+  </header>
+
+  <main class="container page-projects">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Portfólio de Soluções</span>
+      <h1>Projetos & Automações</h1>
+    </div>
+
+    <!-- BARRA DE FILTROS -->
+    <div class="filter-bar" data-animate>
+      <button class="filter-btn active" data-filter="all">Todos (15)</button>
+      <button class="filter-btn" data-filter="automation">🤖 Automações & Robôs</button>
+      <button class="filter-btn" data-filter="web">🌐 Aplicações Web & APIs</button>
+      <button class="filter-btn" data-filter="academic">🎓 Acadêmicos</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- 1. ROBÔ EXTRAÇÃO SOLICITAÇÕES -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🤖</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/RoboExtracaoSolicitacoes" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Central</span>
+          <h3>Robô de Extração de Solicitações</h3>
+        </div>
+        <p>Automação completa para a central de atendimento: extrai informações brutas do sistema interno e consolida dados automaticamente em planilhas operacionais, eliminando digitação manual.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Excel</span><span>Processos</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 2. ROBÔ DE FECHAMENTO FINANCEIRO -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">📊</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/Automacao-de-fechamento-" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Fechamento</span>
+          <h3>Robô de Fechamento (v2)</h3>
+        </div>
+        <p>Automação desenvolvida para substituir rotinas manuais de fechamento por execuções programadas, garantindo zero inconsistência e agilizando a entrega de relatórios financeiros.</p>
+        <div class="tags"><span>Python</span><span>Fechamento</span><span>RPA</span><span>Automação</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 3. FECHAMENTO VEÍCULOS & MÁQUINAS -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🚜</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/Automacao-de-fechamento-" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Patrimônio</span>
+          <h3>Fechamento de Veículos & Máquinas</h3>
+        </div>
+        <p>Script especializado na validação e consolidação de registros operacionais de frotas e maquinários pesados para cálculo exato de custos de fechamento.</p>
+        <div class="tags"><span>Python</span><span>Gestão</span><span>Relatórios</span><span>Automação</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 4. ROBÔ RESUMO AVALIAÇÃO -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">⚡</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/robo_resumo_avaliacao_completo" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Avaliações</span>
+          <h3>Robô Resumo de Avaliação</h3>
+        </div>
+        <p>Coleta conjuntos de dados brutos e desformatados, aplicando regras automáticas de limpeza para gerar relatórios na estrutura exata de envio ao cliente.</p>
+        <div class="tags"><span>Python</span><span>Tratamento de Dados</span><span>Excel</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 5. AUTOMAÇÃO TRELLO -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">⚙️</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/Automa-o-de-cards-no-trello-a" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Trello</span>
+          <h3>Automação de Cards no Trello</h3>
+        </div>
+        <p>Leitura automática de e-mails, validação de requisições no sistema e criação dinâmica de cards perfeitamente formatados via API oficial do Trello.</p>
+        <div class="tags"><span>Python</span><span>API Trello</span><span>E-mail</span><span>Integrador</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 6. GERAR PRINTS -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">📸</span>
+          <div class="card-links"></div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Utilitário</span>
+          <h3>Automação de Captura de Evidências</h3>
+        </div>
+        <p>Robô desenvolvido para realizar capturas sequenciais de tela, salvação de comprovantes e agrupamento visual para auditoria de processos.</p>
+        <div class="tags"><span>Python</span><span>Screen Capture</span><span>Automação Visual</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 7. ATUALIZAÇÃO DE IPCA / ÍNDICES -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">📈</span>
+          <div class="card-links"></div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Financeiro</span>
+          <h3>Automação de Atualização de IPCA</h3>
+        </div>
+        <p>Script automático para consulta de índices governamentais e atualização inflacionária (IPCA) em bases de cálculo e relatórios de precificação.</p>
+        <div class="tags"><span>Python</span><span>APIs Financeiras</span><span>Excel</span><span>IPCA</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 8. CALCULADORA DE PRECIFICAÇÃO -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🧮</span>
+          <div class="card-links"></div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Engenharia</span>
+          <h3>Gerador Avançado de Precificação</h3>
+        </div>
+        <p>Solução automatizada em planilhas para fórmulas complexas de composição de preços de serviços imobiliários e levantamento de dados comparativos.</p>
+        <div class="tags"><span>Excel Avançado</span><span>VBA/Scripts</span><span>Precificação</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 9. INTEGRAÇÃO ASCENSUS LOGÍSTICA -->
+      <article class="project-card" data-category="automation" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🔗</span>
+          <div class="card-links"></div>
+        </div>
+        <div>
+          <span class="badge-corp">Empresa / Ascensus</span>
+          <h3>Integração Logística ERP Protheus</h3>
+        </div>
+        <p>Otimização de fluxos entre ERP Protheus, Zion WMS e Logix. Solução para conciliação de pedidos, notas fiscais e relatórios analíticos via SQL/DBeaver.</p>
+        <div class="tags"><span>SQL</span><span>ERP Protheus</span><span>WMS</span><span>Integração</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 10. CONTROLE ALIMENTAR -->
+      <article class="project-card" data-category="web" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🍽️</span>
+          <div class="card-links">
+            <a href="https://lgiugno.github.io/controle-de-comida/" target="_blank" title="Ver Aplicação Rodando">↗</a>
+            <a href="https://github.com/LGiugno/controle-de-comida" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Web / Front-end</span>
+          <h3>Controle de Consumo Alimentar</h3>
+        </div>
+        <p>Web app completo para registro diário de refeições, cálculo automático de calorias/macronutrientes via API REST e histórico persistente local.</p>
+        <div class="tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>API REST</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 11. CRIADOR DE SENHAS -->
+      <article class="project-card" data-category="web" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🔐</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/Criador-de-senhas-" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Web / Utilitário</span>
+          <h3>Gerador de Senhas Seguras</h3>
+        </div>
+        <p>Aplicação interativa em JavaScript para geração de senhas aleatórias e personalizadas de até 25 caracteres, com verificador de força de criptografia.</p>
+        <div class="tags"><span>JavaScript</span><span>Segurança</span><span>DOM</span><span>CSS3</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 12. TESTE APAIXONADO -->
+      <article class="project-card" data-category="web" data-animate>
+        <div class="card-top">
+          <span class="card-icon">💖</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/Corre-o-do-Amor-/blob/main/index.html" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Web / Interativo</span>
+          <h3>Interface Interativa de DOM</h3>
+        </div>
+        <p>Aplicação web interativa explorando escuta de eventos de mouse, reposicionamento dinâmico em tela via CSS/JS e integração multimídia.</p>
+        <div class="tags"><span>JavaScript</span><span>DOM Events</span><span>HTML5</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 13. JOGO TERMO -->
+      <article class="project-card" data-category="academic" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🎮</span>
+          <div class="card-links">
+            <a href="https://github.com/LGiugno/Trabalho_POO_1" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Acadêmico / Java</span>
+          <h3>Jogo Termo em Java POO</h3>
+        </div>
+        <p>Projeto acadêmico para a Univille com mecânicas completas do jogo Termo via terminal, utilizando Orientação a Objetos, herança, exceções e leitura de arquivos.</p>
+        <div class="tags"><span>Java</span><span>POO</span><span>Arquivos</span><span>Algoritmos</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 14. SITE ACADÊMICO -->
+      <article class="project-card" data-category="academic" data-animate>
+        <div class="card-top">
+          <span class="card-icon">🌐</span>
+          <div class="card-links">
+            <a href="https://lgiugno.github.io/Site-trabalho-1-Bimestre/" target="_blank" title="Ver Projeto Rodando">↗</a>
+            <a href="https://github.com/LGiugno/Site-trabalho-1-Bimestre" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Acadêmico / Web</span>
+          <h3>Site Web Acadêmico</h3>
+        </div>
+        <p>Desenvolvimento de portal responsivo no primeiro semestre da graduação em Engenharia de Software, explorando padrões W3C e semântica HTML5.</p>
+        <div class="tags"><span>HTML5</span><span>CSS3</span><span>Design Responsivo</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+      <!-- 15. PORTFÓLIO -->
+      <article class="project-card" data-category="web" data-animate>
+        <div class="card-top">
+          <span class="card-icon">💼</span>
+          <div class="card-links">
+            <a href="https://lgiugno.github.io/Portif-lio/" target="_blank" title="Ver Portfólio Rodando">↗</a>
+            <a href="https://github.com/LGiugno/Portif-lio" target="_blank" title="Código no GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="badge-corp">Web / Portfólio</span>
+          <h3>Portfólio Pessoal Lucas</h3>
+        </div>
+        <p>Site de apresentação multi-página moderno e fluido com filtros de categoria, integração FormSubmit e deploy contínuo no GitHub Pages.</p>
+        <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>FormSubmit</span></div>
+        <span class="project-status live">Concluído</span>
+      </article>
+
+    </div>
+
+    <div class="section-cta" data-animate style="margin-top: 48px; text-align: center;">
+      <a href="https://github.com/LGiugno" target="_blank" class="btn outline">Acessar GitHub Completo →</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">© <span id="year2">2026</span> Lucas Zimmermann</div>
+      <div class="footer-right">
+        <a href="mailto:lucaszimmermanng@gmail.com">lucaszimmermanng@gmail.com</a>
+        <span>Joinville, SC</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

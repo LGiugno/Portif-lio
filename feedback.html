@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Avaliar Site — Lucas Zimmermann</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LZ<span class="logo-dot">.</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
+        <a href="experience.html">Experiência</a>
+        <a href="contact.html">Contato</a>
+        <a href="feedback.html" class="cta active">Avaliar</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle"><span></span><span></span><span></span></button>
+      <div class="nav-overlay" id="nav-overlay"></div>
+    </div>
+  </header>
+
+  <main class="container page-feedback">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Sua opinião importa</span>
+      <h1>Avalie este portfólio</h1>
+    </div>
+
+    <div class="feedback-card" data-animate>
+      <form id="feedback-form" action="https://formsubmit.co/lucaszimmermanng@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nova Avaliação do Portfólio - Lucas">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://lgiugno.github.io/Portif-lio/index.html">
+        
+        <label>Seu nome <input type="text" name="nome" required placeholder="Seu nome completo"></label>
+        <label>Seu Email <input type="email" name="email" required placeholder="seu@email.com"></label>
+        <label>Nota de Avaliação (1-5)
+          <select name="avaliacao" required>
+            <option value="">Selecione...</option>
+            <option value="5">5 ★ — Excelente</option>
+            <option value="4">4 ★ — Muito bom</option>
+            <option value="3">3 ★ — Bom</option>
+            <option value="2">2 ★ — Regular</option>
+            <option value="1">1 ★ — Precisa melhorar</option>
+          </select>
+        </label>
+        <label>Comentários ou Sugestões <textarea name="comentarios" rows="4" placeholder="O que você achou do design, automações ou apresentação? (opcional)"></textarea></label>
+        <div style="margin-top: 20px;">
+          <button type="submit" class="btn primary" style="width: 100%;">Enviar Avaliação</button>
+        </div>
+      </form>
+      <div id="feedback-result" style="margin-top: 16px;"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">© <span id="year2">2026</span> Lucas Zimmermann</div>
+      <div class="footer-right">
+        <a href="mailto:lucaszimmermanng@gmail.com">lucaszimmermanng@gmail.com</a>
+        <span>Joinville, SC</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
